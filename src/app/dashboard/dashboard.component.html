@@ -5,7 +5,6 @@
         <h2 class="card-content">Weather Summary</h2>
         <h3 class="card-content">{{location.city}}</h3>
         <h3 class="card-content">{{location.currentTemp}}</h3>
-        <h3 class="card-content">{{location.conditions}}</h3>
         <img class="card-content" *ngSwitchCase="'Sunny'" src="../../assets/sunny.png"/>
         <img class="card-content" *ngSwitchCase="'Snow'" src="../../assets/snow.png"/> 
         <img class="card-content" *ngSwitchCase="'Partly Cloudy'" src="../../assets/partly_cloudy.png"/> 
