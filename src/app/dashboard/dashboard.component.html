@@ -1,8 +1,15 @@
 <div class="weather-card" *ngFor="let location of locations">
-    <a class="card-content" [title]="location.city + ' details'">
+    <a class="card-content" 
+    [title]="location.city + ' details'"
+    [ngSwitch]="location.conditions">
         <h2 class="card-content">Weather Summary</h2>
         <h3 class="card-content">{{location.city}}</h3>
         <h3 class="card-content">{{location.currentTemp}}</h3>
         <h3 class="card-content">{{location.conditions}}</h3>
+        <img *ngSwitchCase="'Sunny'" src="../../assets/sunny.png"/>
+        <img *ngSwitchCase="'Snow'" src="../../assets/snow.png"/> 
+        <img *ngSwitchCase="'Partly Cloudy'" src="../../assets/partly_cloudy.png"/> 
+        <img *ngSwitchCase="'Rainy'" src="../../assets/rain.png"/> 
+        <img *ngSwitchCase="'Cloudy'" src="../../assets/cloudy.png"/> 
     </a>
 </div>
