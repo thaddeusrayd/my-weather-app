@@ -1,7 +1,3 @@
-<h1 class="title">MyWeather</h1>
-
-<button type="button" (click)="addLocation()">Add Location</button>
-
 <div *ngFor="let location of locations">
     <a [title]="location.city + ' details'">
         <h2>{{location.city}}</h2>

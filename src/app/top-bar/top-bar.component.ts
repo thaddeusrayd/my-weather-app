@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./top-bar.component.css']
 })
 export class TopBarComponent {
-
+  addLocation() {
+    window.alert('You added a location!')
+  }
 }
