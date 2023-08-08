@@ -6,10 +6,11 @@
         <h3 class="card-content">{{location.city}}</h3>
         <h3 class="card-content">{{location.currentTemp}}</h3>
         <h3 class="card-content">{{location.conditions}}</h3>
-        <img *ngSwitchCase="'Sunny'" src="../../assets/sunny.png"/>
-        <img *ngSwitchCase="'Snow'" src="../../assets/snow.png"/> 
-        <img *ngSwitchCase="'Partly Cloudy'" src="../../assets/partly_cloudy.png"/> 
-        <img *ngSwitchCase="'Rainy'" src="../../assets/rain.png"/> 
-        <img *ngSwitchCase="'Cloudy'" src="../../assets/cloudy.png"/> 
+        <img class="card-content" *ngSwitchCase="'Sunny'" src="../../assets/sunny.png"/>
+        <img class="card-content" *ngSwitchCase="'Snow'" src="../../assets/snow.png"/> 
+        <img class="card-content" *ngSwitchCase="'Partly Cloudy'" src="../../assets/partly_cloudy.png"/> 
+        <img class="card-content" *ngSwitchCase="'Rainy'" src="../../assets/rain.png"/> 
+        <img class="card-content" *ngSwitchCase="'Cloudy'" src="../../assets/cloudy.png"/> 
+        <img class="card-content, brewers" *ngSwitchCase="'Awful'" src="../../assets/kisspng-milwaukee-brewers-arizona-diamondbacks-st-louis-c-5b2167fd88e563.6774381015289159655607.png"/> 
     </a>
 </div>

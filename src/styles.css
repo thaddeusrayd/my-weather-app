@@ -53,8 +53,8 @@ mwa-top-bar {
   .weather-card {
     background-color: rgb(141, 23, 209);
     padding: 10px 10px;
-    height: 200px;
-    width: 250px;
+    /* height: 200px; */
+    /* width: 250px; */
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -69,4 +69,9 @@ mwa-top-bar {
 
   .card-content > h2 {
     font-weight: bold;
+  }
+
+  .brewers {
+    height: 100px;
+    background-color: transparent;
   }
