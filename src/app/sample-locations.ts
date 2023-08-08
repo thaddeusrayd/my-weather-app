@@ -32,7 +32,7 @@ export const locations = [
     },
     {
         city: 'Milwaukee',
-        currentTemp: 1000,
+        currentTemp: 'Terrible place, Go Cubs',
         conditions: 'Awful',
         id: 5
     },
