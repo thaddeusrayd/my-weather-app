@@ -1,7 +1,36 @@
 * {
     font-family: 'Roboto', Arial, sans-serif;
-    color: #616161;
+    color: black;
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    background-color: #a39f9f;
+  }
+
+.title {
+    font-style: italic;
+    font-size:larger;
+}
+
+  /* Button */
+.button, button {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 16px;
+    border-radius: 2px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border: none;
+  }
+  
+  .button:hover, button:hover {
+    opacity: 0.8;
+    font-weight: normal;
+  }
+  
+  .button:disabled, button:disabled {
+    opacity: 0.5;
+    cursor: auto;
   }
