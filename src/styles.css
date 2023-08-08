@@ -19,6 +19,7 @@ mwa-top-bar {
 .title {
     font-style: italic;
     font-size:x-large;
+    cursor: pointer;
 }
 
   /* Button */
@@ -65,6 +66,7 @@ mwa-top-bar {
     background-color: transparent;
     color: white;
     text-align: center;
+    text-decoration: none;
   }
 
   .card-content > h2 {
