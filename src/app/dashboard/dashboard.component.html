@@ -2,7 +2,7 @@
     <a class="card-content" 
     [title]="location.city + ' details'"
     [ngSwitch]="location.conditions"
-    [routerLink]="['/locations/:id']">
+    [routerLink]="['/locations', location.id]">
         <h2 class="card-content">Weather Summary</h2>
         <h3 class="card-content">{{location.city}}</h3>
         <h3 class="card-content">{{location.currentTemp}}&deg;</h3>
