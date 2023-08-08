@@ -7,6 +7,6 @@ import { locations } from '../sample-locations';
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent {
-  locations = [...locations]
+  locations: any[] = [...locations]
 
 }
