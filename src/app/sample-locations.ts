@@ -8,26 +8,31 @@ export const locations = [
     {
         city: 'Chicago',
         currentTemp: 78,
-        conditions: 'Sunny'
+        conditions: 'Sunny',
+        id: 1
     },
     {
         city: 'Jackson',
         currentTemp: 98,
-        conditions: 'Partly Cloudy'
+        conditions: 'Partly Cloudy',
+        id: 2
     },
     {
         city: 'Fairhope',
         currentTemp: 95,
-        conditions: 'Sunny'
+        conditions: 'Sunny',
+        id: 3
     },
     {
         city: 'Lesvos',
         currentTemp: 88,
-        conditions: 'Rainy'
+        conditions: 'Rainy',
+        id: 4
     },
     {
         city: 'Milwaukee',
         currentTemp: 1000,
-        conditions: 'Awful'
+        conditions: 'Awful',
+        id: 5
     },
 ];
