@@ -9,4 +9,7 @@ import { locations } from '../sample-locations';
 export class DashboardComponent {
   locations = [...locations]
 
+  addLocation() {
+    window.alert('You added a location!')
+  }
 }
