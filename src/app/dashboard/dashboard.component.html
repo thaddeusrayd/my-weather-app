@@ -1,7 +1,8 @@
-<div *ngFor="let location of locations">
-    <a [title]="location.city + ' details'">
-        <h2>{{location.city}}</h2>
-        <h3>{{location.currentTemp}}</h3>
-        <h3>{{location.conditions}}</h3>
+<div class="weather-card" *ngFor="let location of locations">
+    <a class="card-content" [title]="location.city + ' details'">
+        <h2 class="card-content">Weather Summary</h2>
+        <h3 class="card-content">{{location.city}}</h3>
+        <h3 class="card-content">{{location.currentTemp}}</h3>
+        <h3 class="card-content">{{location.conditions}}</h3>
     </a>
 </div>

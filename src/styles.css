@@ -4,15 +4,16 @@
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: #a39f9f;
+    background-color: #bdb7b7;
   }
 
 mwa-top-bar {
     width: 100%;
-    height: 100px;
+    height: 150px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding:30px
 }
 
 .title {
@@ -42,4 +43,30 @@ mwa-top-bar {
   .button:disabled, button:disabled {
     opacity: 0.5;
     cursor: auto;
+  }
+
+  mwa-dashboard {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .weather-card {
+    background-color: rgb(141, 23, 209);
+    padding: 10px 10px;
+    height: 200px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: 2px solid black;
+  }
+
+  .card-content {
+    background-color: transparent;
+    color: white;
+    text-align: center;
+  }
+
+  .card-content > h2 {
+    font-weight: bold;
   }
