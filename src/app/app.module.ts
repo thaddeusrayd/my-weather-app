@@ -10,13 +10,12 @@ import { WeatherDetailComponent } from './dashboard/weather-detail.component';
 @NgModule({
   declarations: [
     AppComponent,
-    DashboardComponent,
     TopBarComponent,
-    WeatherDetailComponent
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
