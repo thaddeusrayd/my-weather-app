@@ -1,2 +1,15 @@
-<div *ngIf="weatherLocation">
-<h2>{{weatherLocation.city}}</h2>></div>
+<div class="weather-card" *ngIf="weatherLocation">
+    <a class="card-content"
+    [ngSwitch]="weatherLocation.conditions">
+        <h1 class="card-content">Weather Detail</h1>
+        <h2 class="card-content">{{weatherLocation.city}}</h2>
+        <h3 class="card-content">{{weatherLocation.currentTemp}}&deg;</h3>
+        <img class="card-content" *ngSwitchCase="'Sunny'" src="../../assets/sunny.png"/>
+        <img class="card-content" *ngSwitchCase="'Snow'" src="../../assets/snow.png"/> 
+        <img class="card-content" *ngSwitchCase="'Partly Cloudy'" src="../../assets/partly_cloudy.png"/> 
+        <img class="card-content" *ngSwitchCase="'Rainy'" src="../../assets/rain.png"/> 
+        <img class="card-content" *ngSwitchCase="'Cloudy'" src="../../assets/cloudy.png"/> 
+        <img class="card-content, brewers" *ngSwitchCase="'Awful'" src="../../assets/kisspng-milwaukee-brewers-arizona-diamondbacks-st-louis-c-5b2167fd88e563.6774381015289159655607.png"/> 
+        <h3 class="card-content">{{weatherLocation.forecast}}</h3>
+    </a>
+</div>
