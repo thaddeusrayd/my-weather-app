@@ -6,12 +6,15 @@ import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { WeatherDetailComponent } from './dashboard/weather-detail.component';
+import { MessagesComponent } from './messages/messages.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TopBarComponent,
-    DashboardComponent
+    DashboardComponent,
+    MessagesComponent,
+    WeatherDetailComponent
   ],
   imports: [
     BrowserModule,

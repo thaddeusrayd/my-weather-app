@@ -4,9 +4,9 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { WeatherDetailComponent } from './dashboard/weather-detail.component';
 
 const routes: Routes = [
+  { path: '', redirectTo: 'locations', pathMatch: 'full' },
   { path: 'locations', component: DashboardComponent },
   { path: 'locations/:id', component: WeatherDetailComponent },
-  { path: '', redirectTo: 'locations', pathMatch: 'full' },
   { path: '**', redirectTo: 'locations', pathMatch: 'full' }
 ];
 

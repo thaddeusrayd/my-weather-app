@@ -1,9 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { Router, ActivatedRoute, ParamMap } from '@angular/router';
-import { locations } from 'src/app/sample-locations';
-import { switchMap } from 'rxjs/operators'
-import { Observable } from 'rxjs';
+import { ActivatedRoute, ParamMap, Router } from '@angular/router';
+import { Location } from '@angular/common';
 import { WeatherLocation } from './weather-location';
+import { WeatherService } from './weather.service';
 
 @Component({
   selector: 'mwa-weather-detail',
@@ -11,17 +10,22 @@ import { WeatherLocation } from './weather-location';
   styleUrls: ['./weather-detail.component.css'],
 })
 export class WeatherDetailComponent implements OnInit{
-  location$!: Observable<WeatherLocation>
-  pageTitle: string = 'Weather detail';
-  location: Location | undefined;
-  locations: any[] = [...locations]
+  weatherLocation: WeatherLocation | undefined;
+  // locations: any[] = [...locations]
 
-  constructor(private route: ActivatedRoute) {}
+  constructor(
+    private route: ActivatedRoute,
+    private weatherService: WeatherService,
+    private location: Location
+    ) {}
 
   ngOnInit(): void {
-    const id = Number(this.route.snapshot.paramMap.get('id'));
-
+    this.getWeatherLocation();
   }
 
-  
+  getWeatherLocation(): void {
+    const id = Number(this.route.snapshot.paramMap.get('id'));
+    this.weatherService.getWeatherLocation(id)
+      .subscribe(weatherLocation => this.weatherLocation = weatherLocation)
+  }
 }

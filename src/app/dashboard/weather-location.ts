@@ -1,4 +1,6 @@
 export interface WeatherLocation {
-    id: number;
     city: string;
+    currentTemp: any;
+    conditions: string;
+    id: number;
 }

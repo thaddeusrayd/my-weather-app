@@ -1,11 +1,6 @@
-export interface Location {
-    id: number,
-    city: string,
-    currentTemp: number,
-    conditions: string
-}
+import { WeatherLocation } from "./dashboard/weather-location";
 
-export const locations = [
+export const locations: WeatherLocation[] = [
     {
         city: 'Chicago',
         currentTemp: 78,
