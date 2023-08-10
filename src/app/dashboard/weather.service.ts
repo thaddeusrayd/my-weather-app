@@ -3,6 +3,7 @@ import { Observable, of } from 'rxjs';
 import { WeatherLocation } from './weather-location';
 import { locations } from '../sample-locations';
 import { MessageService } from '../message.service';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
